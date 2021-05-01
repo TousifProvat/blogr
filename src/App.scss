@@ -1,0 +1,196 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$overpass: 'Overpass', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+//
+
+// Color vairable
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+
+$white: hsl(0, 0%, 100%);
+$grayish-blue: hsl(240, 2%, 79%);
+$very-dark-grayish-blue: hsl(240, 10%, 16%);
+$very-dark-black-blue: hsl(207, 13%, 34%);
+
+//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: $light-red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+// accordion
+.accordion {
+  width: 100%;
+  padding-bottom: 1rem;
+  li {
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    font-family: $overpass;
+    color: $very-dark-blue;
+    cursor: pointer;
+    span {
+      padding-left: 0.5rem;
+      svg {
+        transition: transform 0.3s ease-in-out;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  div {
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba($grayish-blue, 0.3);
+    padding: 0rem;
+    overflow: hidden;
+    a {
+      padding: 0.5rem 0;
+      font-weight: 600;
+      font-family: $overpass;
+      color: $very-dark-black-blue;
+    }
+  }
+}
+
+.accordion-active {
+  li {
+    color: $very-dark-black-blue;
+    span {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  div {
+    max-height: none;
+    padding: 1rem;
+  }
+}
+//
+
+// nav-active
+
+.nav-active {
+  transform: translateY(0) !important;
+}
+
+//
+
+// navbar
+header {
+  background-color: transparent;
+  min-height: 8vh;
+  display: flex;
+  align-items: flex-end;
+  .navbar {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: $ubuntu;
+      color: $white;
+    }
+
+    .secondary-nav-links {
+      position: absolute;
+      transform: translateY(-110vh);
+      top: 12vh;
+      left: 10%;
+      width: 80%;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .second-nav {
+        border-top: 2px solid rgba($grayish-blue, 0.4);
+        padding-top: 1rem;
+        a {
+          padding-top: 0.8rem;
+          color: $very-dark-blue;
+          font-size: 1.2rem;
+          font-weight: 600;
+          font-family: $overpass;
+          display: flex;
+          align-items: center;
+        }
+        .singup-btn {
+          background-image: linear-gradient(
+            90deg,
+            hsl(13, 100%, 72%),
+            hsl(353, 100%, 62%)
+          );
+          padding: 1rem 2.5rem;
+          margin-top: 1rem;
+          color: $white;
+          border-radius: 25px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .burger {
+      cursor: pointer;
+
+      div {
+        width: 25px;
+        height: 4px;
+        background-color: $white;
+        margin: 0.25rem 0;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .burger-active {
+      .line1 {
+        transform: rotate(45deg) translate(8px, 10px);
+      }
+      .line2 {
+        opacity: 0;
+      }
+      .line3 {
+        transform: rotate(-45deg) translate(2px, -3px);
+      }
+    }
+  }
+}

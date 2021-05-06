@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className="navbar">
-        <div className="logo">Blogr</div>
+        <div className="logo header-logo">Blogr</div>
         <div className={`${nav ? 'nav-active' : ''} secondary-nav-links`}>
           <div className="mobile-nav-links ">
             <Accordion title="Product" links={['All products']} />

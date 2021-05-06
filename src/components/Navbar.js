@@ -15,8 +15,20 @@ export default function Navbar() {
         <div className="logo header-logo">Blogr</div>
         <div className={`${nav ? 'nav-active' : ''} secondary-nav-links`}>
           <div className="mobile-nav-links ">
-            <Accordion title="Product" links={['All products']} />
-            <Accordion title="Company" links={['All companies']} />
+            <Accordion
+              title="Product"
+              links={[
+                'Overview',
+                'Pricing',
+                'Marketplace',
+                'Features',
+                'Integrations',
+              ]}
+            />
+            <Accordion
+              title="Company"
+              links={['About', 'Team', 'Blog', 'Careers']}
+            />
             <Accordion
               title="Connect"
               links={['Contact', 'Newsletter', 'Linkdin']}

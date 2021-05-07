@@ -32,12 +32,16 @@ export default function About() {
             </div>
           </div>
           <div className="about-display">
-            <img src={editorMobile} alt="" className="about-img" />
+            <img src={editorMobile} alt="mobile" className="about-img" />
           </div>
         </div>
         <div className="art">
           <div className="pattern">
-            <img src={cicrclePattern} className="circle-pattern" />
+            <img
+              src={cicrclePattern}
+              alt="pattern"
+              className="circle-pattern"
+            />
           </div>
           <div className="art-display">
             <img src={phones} alt="art" className="art-img" />

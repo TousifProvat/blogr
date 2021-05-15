@@ -7,7 +7,7 @@ export default function Accordion({ title, links }) {
   };
   return (
     <div className={`${active ? 'accordion-active' : ''} accordion`}>
-      <span onClick={onClick}>
+      <h2 href="/" onClick={onClick}>
         {title}{' '}
         <span>
           <svg
@@ -25,7 +25,7 @@ export default function Accordion({ title, links }) {
             />
           </svg>
         </span>
-      </span>
+      </h2>
       <div>
         {links &&
           links.map((link) => (

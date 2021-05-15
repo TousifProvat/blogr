@@ -29,7 +29,7 @@ export default function Accordion({ title, links }) {
       <div>
         {links &&
           links.map((link) => (
-            <a href="#" key={links.indexOf(link)}>
+            <a href="/#" key={links.indexOf(link)}>
               {link}
             </a>
           ))}

@@ -1,13 +1,23 @@
-
+import { useState, useEffect } from 'react';
 // svg
 import laptopMobile from '../assets/illustration-laptop-mobile.svg';
+import laptopDesktop from '../assets/illustration-laptop-desktop.svg';
 
 export default function Feature() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
+
   return (
     <div id="feature">
       <div className="container">
         <div className="feature-display">
-          <img src={laptopMobile} alt="feature" />
+          <img
+            src={windowWidth > 1023 ? laptopDesktop : laptopMobile}
+            alt="feature"
+          />
         </div>
         <div className="feature-desc">
           <div className="para para-1">

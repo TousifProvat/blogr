@@ -1,9 +1,11 @@
 // svg
 import intro from '../assets/bg-pattern-intro.svg';
+import Navbar from './Navbar';
 
 export default function Home() {
   return (
     <div id="home">
+      <Navbar />
       <img className="bg-pattern" src={intro} alt="pattern" />
       <div className="container">
         <div className="home-heading">A modern publishing platform</div>

@@ -12,7 +12,29 @@ export default function Navbar() {
   return (
     <header>
       <nav className="navbar">
-        <div className="logo header-logo">Blogr</div>
+        <div className="left-side">
+          <div className="logo header-logo">Blogr</div>
+          <div className="desktop-nav-links">
+            <Accordion
+              title="Product"
+              links={[
+                'Overview',
+                'Pricing',
+                'Marketplace',
+                'Features',
+                'Integrations',
+              ]}
+            />
+            <Accordion
+              title="Company"
+              links={['About', 'Team', 'Blog', 'Careers']}
+            />
+            <Accordion
+              title="Connect"
+              links={['Contact', 'Newsletter', 'Linkdin']}
+            />
+          </div>
+        </div>
         <div className={`${nav ? 'nav-active' : ''} secondary-nav-links`}>
           <div className="mobile-nav-links ">
             <Accordion
@@ -35,10 +57,10 @@ export default function Navbar() {
             />
           </div>
           <div className="second-nav">
-            <a href="#" className="login-btn">
+            <a href="/#" className="login-btn">
               Login
             </a>
-            <a href="#" className="singup-btn">
+            <a href="/#" className="singup-btn">
               Sing up
             </a>
           </div>

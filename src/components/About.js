@@ -1,9 +1,19 @@
+import { useState, useEffect } from 'react';
+
 // svg
 import editorMobile from '../assets/illustration-editor-mobile.svg';
+import editorDesktop from '../assets/illustration-editor-desktop.svg';
+
 import phones from '../assets/illustration-phones.svg';
 import cicrclePattern from '../assets/bg-pattern-circles.svg';
 
 export default function About() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
+
   return (
     <div id="about">
       <h1 className="title">Designed for the future</h1>
@@ -32,28 +42,36 @@ export default function About() {
             </div>
           </div>
           <div className="about-display">
-            <img src={editorMobile} alt="mobile" className="about-img" />
+            <img
+              src={windowWidth > 1023 ? editorDesktop : editorMobile}
+              alt="mobile"
+              className="about-img"
+            />
           </div>
         </div>
         <div className="art">
-          <div className="pattern">
-            <img
-              src={cicrclePattern}
-              alt="pattern"
-              className="circle-pattern"
-            />
-          </div>
-          <div className="art-display">
-            <img src={phones} alt="art" className="art-img" />
-          </div>
-          <div className="art-blog">
-            <h2 className="art-blog-title">State of the Art Infrastructures</h2>
-            <p>
-              With reliability and speed in mind, worldwide data centers provide
-              the backbone for ultra-fast connectivity. This ensures your site
-              will load instantly, no matter where your readers are, keeping
-              your site competitive.
-            </p>
+          <div className="art-container">
+            <div className="pattern">
+              <img
+                src={cicrclePattern}
+                alt="pattern"
+                className="circle-pattern"
+              />
+            </div>
+            <div className="art-display">
+              <img src={phones} alt="art" className="art-img" />
+            </div>
+            <div className="art-blog">
+              <h2 className="art-blog-title">
+                State of the Art Infrastructures
+              </h2>
+              <p>
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
           </div>
         </div>
       </div>

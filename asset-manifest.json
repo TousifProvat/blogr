@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/blogr/static/css/main.aaaca0c7.chunk.css",
-    "main.js": "/blogr/static/js/main.e33f8133.chunk.js",
-    "main.js.map": "/blogr/static/js/main.e33f8133.chunk.js.map",
+    "main.css": "/blogr/static/css/main.61941963.chunk.css",
+    "main.js": "/blogr/static/js/main.13437306.chunk.js",
+    "main.js.map": "/blogr/static/js/main.13437306.chunk.js.map",
     "runtime-main.js": "/blogr/static/js/runtime-main.c3d7e559.js",
     "runtime-main.js.map": "/blogr/static/js/runtime-main.c3d7e559.js.map",
     "static/js/2.ec0138cd.chunk.js": "/blogr/static/js/2.ec0138cd.chunk.js",
     "static/js/2.ec0138cd.chunk.js.map": "/blogr/static/js/2.ec0138cd.chunk.js.map",
     "index.html": "/blogr/index.html",
-    "static/css/main.aaaca0c7.chunk.css.map": "/blogr/static/css/main.aaaca0c7.chunk.css.map",
+    "static/css/main.61941963.chunk.css.map": "/blogr/static/css/main.61941963.chunk.css.map",
     "static/js/2.ec0138cd.chunk.js.LICENSE.txt": "/blogr/static/js/2.ec0138cd.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-circles.bae804b8.svg": "/blogr/static/media/bg-pattern-circles.bae804b8.svg",
     "static/media/bg-pattern-intro.bf6b3e1b.svg": "/blogr/static/media/bg-pattern-intro.bf6b3e1b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.c3d7e559.js",
     "static/js/2.ec0138cd.chunk.js",
-    "static/css/main.aaaca0c7.chunk.css",
-    "static/js/main.e33f8133.chunk.js"
+    "static/css/main.61941963.chunk.css",
+    "static/js/main.13437306.chunk.js"
   ]
 }

@@ -7,7 +7,7 @@ export default function Accordion({ title, links }) {
   };
   return (
     <div className={`${active ? 'accordion-active' : ''} accordion`}>
-      <h2 href="/" onClick={onClick}>
+      <h2  onClick={onClick}>
         {title}{' '}
         <span>
           <svg

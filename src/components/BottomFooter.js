@@ -7,7 +7,7 @@ export default function BottomFooter() {
             Challenger:
             <span>
               <strong>
-                <a href="https://www.frontendmentor.io/" target="_balnk">
+                <a href="https://www.frontendmentor.io/" target="_blank">
                   {' '}
                   Frontend Mentor
                 </a>
@@ -19,7 +19,7 @@ export default function BottomFooter() {
           <h2 className="name">
             Developer:
             <strong>
-              <a href="http://tousif-ahmed.herokuapp.com/" target="_balnk">
+              <a href="http://tousif-ahmed.herokuapp.com/" target="_blank">
                 {' '}
                 Tousif Ahmed
               </a>

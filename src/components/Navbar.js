@@ -13,7 +13,9 @@ export default function Navbar() {
     <header>
       <nav className="navbar">
         <div className="left-side">
-          <div className="logo header-logo">Blogr</div>
+          <a className="logo header-logo" href="/blogr">
+            Blogr
+          </a>
           <div className="desktop-nav-links">
             <Accordion
               title="Product"

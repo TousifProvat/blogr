@@ -644,11 +644,12 @@ header {
 @media screen and (min-width: 1023px) {
   .accordion {
     padding: 0 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0;
     position: relative;
     h2 {
       font-size: 1rem;
       color: $white;
+      padding-bottom: 0;
       &:hover {
         text-decoration: underline;
       }

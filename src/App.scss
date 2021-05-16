@@ -33,6 +33,8 @@ body {
 a {
   text-decoration: none;
   color: black;
+  pointer-events: none;
+  cursor: pointer;
 }
 
 li {

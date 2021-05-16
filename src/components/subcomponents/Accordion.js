@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 
 export default function Accordion({ title, links }) {
@@ -7,7 +8,7 @@ export default function Accordion({ title, links }) {
   };
   return (
     <div className={`${active ? 'accordion-active' : ''} accordion`}>
-      <h2  onClick={onClick}>
+      <h2 onClick={onClick}>
         {title}{' '}
         <span>
           <svg
@@ -27,12 +28,7 @@ export default function Accordion({ title, links }) {
         </span>
       </h2>
       <div>
-        {links &&
-          links.map((link) => (
-            <a href="/#" key={links.indexOf(link)}>
-              {link}
-            </a>
-          ))}
+        {links && links.map((link) => <a key={links.indexOf(link)}>{link}</a>)}
       </div>
     </div>
   );

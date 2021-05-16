@@ -1,3 +1,4 @@
+
 import './App.scss';
 import About from './components/About';
 import BottomFooter from './components/BottomFooter';

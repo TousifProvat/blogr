@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/blogr/static/css/main.9ff2b016.chunk.css",
+    "main.css": "/blogr/static/css/main.801efc05.chunk.css",
     "main.js": "/blogr/static/js/main.ff878fbb.chunk.js",
     "main.js.map": "/blogr/static/js/main.ff878fbb.chunk.js.map",
     "runtime-main.js": "/blogr/static/js/runtime-main.c3d7e559.js",
@@ -8,7 +8,7 @@
     "static/js/2.ec0138cd.chunk.js": "/blogr/static/js/2.ec0138cd.chunk.js",
     "static/js/2.ec0138cd.chunk.js.map": "/blogr/static/js/2.ec0138cd.chunk.js.map",
     "index.html": "/blogr/index.html",
-    "static/css/main.9ff2b016.chunk.css.map": "/blogr/static/css/main.9ff2b016.chunk.css.map",
+    "static/css/main.801efc05.chunk.css.map": "/blogr/static/css/main.801efc05.chunk.css.map",
     "static/js/2.ec0138cd.chunk.js.LICENSE.txt": "/blogr/static/js/2.ec0138cd.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-circles.bae804b8.svg": "/blogr/static/media/bg-pattern-circles.bae804b8.svg",
     "static/media/bg-pattern-intro.bf6b3e1b.svg": "/blogr/static/media/bg-pattern-intro.bf6b3e1b.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.c3d7e559.js",
     "static/js/2.ec0138cd.chunk.js",
-    "static/css/main.9ff2b016.chunk.css",
+    "static/css/main.801efc05.chunk.css",
     "static/js/main.ff878fbb.chunk.js"
   ]
 }
